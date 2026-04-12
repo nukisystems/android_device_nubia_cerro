@@ -208,5 +208,8 @@ vendor/firmware/goodix_cfg_group_9916r.bin
 vendor/firmware/goodix_firmware_9916r.bin
 vendor/firmware/haptic_ram.bin
 
+# Vibrator
+odm/etc/aac_richtap.config:vendor/etc/aac_richtap.config
+
 # VPU firmware
 vendor/firmware/vpu33_4v.mbn
