@@ -90,6 +90,13 @@ blob_fixups: blob_fixups_user_type = {
     ),
     'vendor/lib64/hw/sensors.hal.tof.so': blob_fixup()
         .binary_regex_replace(b'\x00input\x00', b'\x00fakei\x00'),
+    (
+        'vendor/lib64/libsky_seg_toning_320.so',
+        'vendor/lib64/libyuv_sr.so',
+    ): blob_fixup().replace_needed(
+        'libtensorflowlite_gpu_jni.so',
+        'libtensorflowlite_gpu_jni_oem.so',
+    ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
