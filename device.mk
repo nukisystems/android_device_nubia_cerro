@@ -18,7 +18,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    SettingsProviderResCerro
+    SettingsProviderResCerro \
+    EvolutionUpdaterOverlay
 
 # Inherit from proprietary targets
 $(call inherit-product, vendor/nubia/cerro/cerro-vendor.mk)
